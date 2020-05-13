@@ -1,0 +1,414 @@
+.color-mon-1 {
+  stop-color: #15ad45;
+}
+
+.color-mon-2 {
+  stop-color: #1b813e;
+}
+
+.color-theme-2 {
+  stop-color: #0c4842;
+}
+
+.color-hello {
+  stop-color: #183532;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5dac81;
+}
+
+.container {
+  background-color: #183532;
+  background-image: url(../images/hello-world.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: fixed;
+  left: 0;
+  top: 0;
+  perspective: 1px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 100%;
+  min-width: 650px;
+  min-height: 400px;
+}
+
+.svg-style {
+  position: absolute;
+}
+
+@keyframes title-hr {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+.nav-fixed {
+  box-sizing: border-box;
+  padding-top: 13px !important;
+  height: 75px !important;
+  background: #0c4842;
+}
+.nav-fixed .title {
+  font-size: 30px !important;
+  margin-top: 10px;
+}
+
+.nav {
+  transition: all 0.5s;
+  transform: translateZ(-1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 17px);
+  z-index: 9999;
+  min-width: 600px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  height: 100px;
+}
+.nav .title {
+  position: absolute;
+  color: #fcfaf2;
+  z-index: 999;
+  margin-left: 40px;
+  text-align: center;
+  user-select: none;
+  font-size: 38px;
+  letter-spacing: 4px;
+  transition: all 0.3s;
+}
+.nav .title .content a {
+  color: #fcfaf2;
+  text-decoration: none;
+}
+.nav .title:hover .line {
+  width: 90% !important;
+}
+.nav .title > .line {
+  display: inline-block;
+  margin: 15px auto;
+  border-top: 3px solid #fcfaf2;
+  width: 100%;
+  animation: title-hr 1s ease-out;
+  transition: all 0.2s;
+  color: #5dac81;
+  user-select: none;
+  transform: translateY(-10px);
+}
+.nav ul {
+  position: absolute;
+  right: 20px;
+  margin: 15px 50px;
+  font-size: 20px;
+  color: #fcfaf2;
+}
+.nav ul li {
+  margin: auto 0;
+  display: inline-block;
+}
+.nav ul li a {
+  letter-spacing: 1px;
+  color: #fcfaf2;
+  text-decoration: none;
+  padding-bottom: 10px;
+  transition: all 0.2s;
+}
+.nav ul li a:hover {
+  border-bottom: 3px solid #fcfaf2 !important;
+}
+.nav ul li:not(:first-child):before {
+  margin: 28px;
+  content: " ";
+}
+
+.background {
+  background: #5dac81;
+  position: relative;
+}
+.background .title {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0;
+  text-align: center;
+  color: #fcfaf2;
+  transform: translate3D(0, 0, -0.1px) scale(1.1);
+  font-size: 50px;
+  z-index: 1001;
+  user-select: none;
+  font-weight: lighter;
+}
+.background .sun {
+  position: absolute;
+  left: 41.6%;
+  bottom: 16%;
+  width: 16%;
+  transform: translate3D(0, 0, 0.5px) scale(0.5);
+  z-index: 990;
+  transition: all 0.5s;
+}
+.background .mon-1 {
+  position: absolute;
+  transition: all 0.5s;
+  left: 14%;
+  bottom: 0;
+  width: 40%;
+  z-index: 996;
+}
+.background .mon-2 {
+  position: absolute;
+  transition: all 0.5s;
+  right: 11%;
+  bottom: 0;
+  width: 40%;
+  z-index: 997;
+}
+.background .mon-3 {
+  position: absolute;
+  left: 16.67%;
+  bottom: -40%;
+  width: 80%;
+  transform: translate3D(0, 35%, -0.8px) scale(1.6);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+.background .mon-4 {
+  position: absolute;
+  transition: all 0.5s;
+  left: 2%;
+  bottom: 0;
+  width: 37%;
+  z-index: 999;
+}
+.background .mon-5 {
+  position: absolute;
+  transition: all 0.5s;
+  right: 0%;
+  bottom: 0;
+  width: 37%;
+  z-index: 998;
+}
+
+.blog {
+  padding-left: 10%;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh + 10px);
+  background: #0c4842;
+}
+.blog .mon-6 {
+  position: absolute;
+  transition: all 0.5s;
+  left: 12%;
+  bottom: 0;
+  width: 20%;
+  z-index: 999;
+}
+.blog .mon-7 {
+  position: absolute;
+  transition: all 0.5s;
+  right: 10%;
+  bottom: 0;
+  width: 20%;
+  z-index: 998;
+}
+.blog .blog-text {
+  z-index: 1002;
+  position: relative;
+  top: 100px;
+  text-align: left;
+  width: 100%;
+}
+.blog .blog-text div {
+  position: relative;
+}
+.blog .blog-text .title {
+  text-align: center;
+  display: inline-block;
+}
+.blog .blog-text .title p {
+  color: #fcfaf2;
+  font-size: 30px;
+  user-select: none;
+  margin-bottom: 9px;
+}
+.blog .blog-text .title .line {
+  width: 80%;
+  border-top: 2px solid #205c56;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.blog .blog-text .btn {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  color: #fcfaf2;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1px solid #fcfaf2;
+  border-radius: 5px;
+  padding: 7px 20px;
+  vertical-align: middle;
+}
+.blog .blog-text .btn:hover {
+  color: #242020;
+  background: #fff;
+}
+.blog .blog-text .blogContent {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.blog .blog-text .blogContent a {
+  color: #fcfaf2;
+  font-size: 18px;
+  display: block;
+  margin: 10px auto;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.blog .blog-text .blogContent a:hover {
+  transform: translateX(10px);
+  color: #fff;
+}
+
+.hello-world {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.hello-world .title {
+  padding-top: 60vh;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: #fcfaf2;
+}
+.hello-world .mon-3 {
+  position: absolute;
+  left: 22%;
+  bottom: -28%;
+  width: 62%;
+  transform: translate3D(0, 0, 0.2px) scale(0.6);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.project {
+  padding-top: 50px;
+  background: linear-gradient(to bottom, #0c4842, #044432);
+}
+.project .project-card {
+  overflow: auto;
+  color: #fcfaf2;
+  margin-top: 30px;
+  margin-left: 16%;
+  margin-right: 16%;
+  padding-bottom: 30px;
+}
+.project .project-card .title {
+  font-size: 22px;
+}
+.project .project-card .content {
+  font-size: 16px;
+  margin: 20px 80px;
+}
+.project .project-card a {
+  color: #fcfaf2;
+  text-decoration: none;
+  float: right;
+  margin: 0 30px;
+  font-size: 15px;
+  border: 1px solid #fcfaf2;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.project .project-card a:hover {
+  background: #fcfaf2;
+  color: #000;
+}
+.project .project-card:not(:last-child) {
+  border-bottom: 1px solid #205c56;
+  margin-bottom: 40px;
+}
+
+.about {
+  height: calc((20vh + 400px) * 2);
+  position: relative;
+  width: 100%;
+  background: #044432;
+  text-align: center;
+}
+.about .avatar {
+  position: relative;
+  user-select: none;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50% - 100px);
+}
+.about .avatar:hover img {
+  transform: rotateZ(360deg);
+}
+.about .avatar img {
+  height: 200px;
+  width: 200px;
+  transform-origin: 50% 50%;
+  transition: all 0.5s;
+}
+.about .avatar:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(3, 67, 50, 0.7) inset;
+}
+.about .detail {
+  position: relative;
+  top: calc(20vh + 200px);
+  color: #fcfaf2;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.about .detail div {
+  margin-bottom: 30px;
+}
+.about .detail a {
+  color: #fcfaf2;
+  text-decoration: none;
+}
+.about .footer {
+  position: relative;
+  top: calc(20vh + 350px);
+  color: #fcfaf2;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.about .footer svg {
+  margin: auto 4px;
+  vertical-align: middle;
+}

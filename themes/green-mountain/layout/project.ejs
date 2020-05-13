@@ -1,0 +1,30 @@
+<div id="helloWorld" class="hello-world">
+  <p class="title"><%- text.projectTitle %></p>
+  <svg class="mon-3" viewBox="0, 0, 240, 200">
+    <polygon
+      filter="url(#filter-mon)"
+      fill="url(#gradient-mon-3)"
+      points="0,200 200,200 100,0"
+    />
+  </svg>
+</div>
+<div id="project" class="project">
+  <% data.projects.forEach(function(item){ %>
+  <li></li>
+  <div class="project-card">
+    <div class="title"><%= item.title %></div>
+    <div class="content">
+      <%= item.des %>
+    </div>
+    <% if (item.github) { %>
+    <a class="github-btn" href="<%= item.github %>" target="_blank"
+      ><%- text.github %></a
+    >
+    <% } %> <% if (item.link) { %>
+    <a class="demo-btn" href="<%= item.link %>" target="_blank"
+      ><%= item.version %></a
+    >
+    <% } %>
+  </div>
+  <% }) %>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="<%- language %>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=700, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- data.title %></title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script>
+      const blogRSS = "<%- data.blogRSS %>";
+    </script>
+  </head>
+
+  <body>
+    <%- include('nav'); %>
+    <div id="container" class="container">
+      <div id="background" class="background">
+        <div class="title"><%- text.title %></div>
+        <svg class="sun" viewBox="0, 0, 80, 80">
+          <circle cx="40" cy="40" r="30" fill="#CB4042" />
+        </svg>
+        <svg class="mon-3" viewBox="0, 0, 240, 200">
+          <polygon
+            filter="url(#filter-mon)"
+            fill="url(#gradient-mon-3)"
+            points="0,200 200,200 100,0"
+          />
+        </svg>
+        <svg class="mon-4" viewBox="0, 0, 240, 200">
+          <polygon
+            filter="url(#filter-mon)"
+            fill="url(#gradient-mon-2)"
+            points="0,200 200,200 100,20"
+          />
+        </svg>
+        <svg class="mon-5" viewBox="0, 0, 240, 200">
+          <polygon
+            filter="url(#filter-mon)"
+            fill="url(#gradient-mon-2)"
+            points="0,200 200,200 100,20"
+          />
+        </svg>
+        <svg class="mon-1" viewBox="0, 0, 240, 200">
+          <polygon
+            filter="url(#filter-mon)"
+            fill="url(#gradient-mon-1)"
+            points="0,200 200,200 100,50"
+          />
+        </svg>
+        <svg class="mon-2" viewBox="0, 0, 240, 200">
+          <polygon
+            filter="url(#filter-mon)"
+            fill="url(#gradient-mon-1)"
+            points="0,200 200,200 100,50"
+          />
+        </svg>
+      </div>
+      <!-- 博客模块 -->
+      <%- include('blog'); %>
+      <!-- 项目模块 -->
+      <%- include('project'); %>
+      <div id="about" class="about">
+        <div class="avatar"><img src="images/avatar.png" alt="Avatar" /></div>
+        <div class="detail">
+          <div>
+            <%- text.email %>:
+            <a href="tomail://a@zhenly.cn"><%- data.email %></a>
+          </div>
+          <div><%- text.location %>: <%- data.location %></div>
+        </div>
+        <%- include('footer'); %>
+      </div>
+    </div>
+    <svg class="svg-style">
+      <defs>
+        <linearGradient id="gradient-mon-1" x1="0" x2="0" y1="0" y2="1">
+          <stop class="color-mon-2" offset="0%" />
+          <stop class="color-theme-2" offset="100%" />
+        </linearGradient>
+        <linearGradient id="gradient-mon-2" x1="0" x2="0" y1="0" y2="1">
+          <stop class="color-mon-1" offset="0%" />
+          <stop class="color-theme-2" offset="100%" />
+        </linearGradient>
+        <linearGradient id="gradient-mon-4" x1="0" x2="0" y1="0" y2="1">
+          <stop class="color-mon-2" offset="0%" />
+          <stop class="color-hello" offset="100%" />
+        </linearGradient>
+        <linearGradient id="gradient-mon-3" x1="0" x2="0" y1="0" y2="1">
+          <stop class="color-mon-2" offset="0%" />
+          <stop class="color-theme-2" offset="50%" />
+          <stop class="color-theme-2" offset="100%" />
+        </linearGradient>
+        <filter id="filter-mon" x="0" y="0" width="200%" height="200%">
+          <feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+          <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+          <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+      </defs>
+    </svg>
+    <script src="https://xmatrix-1252808268.cos.ap-guangzhou.myqcloud.com/js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
