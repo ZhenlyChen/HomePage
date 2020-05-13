@@ -3,47 +3,6 @@
   "language": "zh-Hans",
   "data": {
     "title": "Zhenly",
-    "author": "ZhenlyChen",
-    "email": "a@zhenly.cn",
-    "location": "GuangZhou",
-    "sinceYear": "2017",
-    "footerText": "粤ICP备16109955号-1",
-    "brand": "Zhenly",
-    "blogRSS": "https://blog.zhenly.cn/atom.xml",
-    "projects": [
-      {
-        "title": "Web | Violet User System",
-        "des": "基于Oauth2.0的用户中央授权系统(第二版重构开发中...)",
-        "github": "https://github.com/XMatrixStudio/Violet.Client.Web",
-        "link": "https://my.zhenly.cn",
-        "version": "V1.0"
-      },
-      {
-        "title": "Web | XMatrix Online Judging System(第二版重构开发中...)",
-        "des": "XMatrix 在线评测系统",
-        "github": "https://github.com/XMatrixTeam/XMatrixOnlineJudge",
-        "link": "https://xmoj.xmatrix.studio",
-        "version": "V2.0"
-      },
-      {
-        "title": "游戏 | 火柴人酷跑",
-        "des": "基于Construct 2的HTML5小游戏。",
-        "link": "/game",
-        "version": "Play"
-      },
-      {
-        "title": "游戏 | 逆河",
-        "des": "基于PIXIJS的HTML5小游戏。",
-        "github": "https://github.com/ZhenlyChen/RiverGame",
-        "link": "/river",
-        "version": "Play"
-      },
-      {
-        "title": "微信小程序 | 尧式番茄钟",
-        "des": "尧式专门定制的番茄钟，独家风味。可根据名字在微信中搜索",
-        "github": "https://github.com/ZhenlyChen/my-Tomato-Clock",
-        "version": "V1.0"
-      }
-    ]
+    "author": "ZhenlyChen"
   }
 }

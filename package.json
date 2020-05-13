@@ -4,14 +4,17 @@
   "description": "Zhenly's home page",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
+    "build": "node ./script/build.js",
+    "dev": "node ./script/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ZhenlyChen",
   "license": "ISC",
   "dependencies": {
+    "chokidar": "^3.4.0",
     "ejs": "^3.1.2",
     "fs-extra": "^9.0.0",
-    "less": "^3.11.1"
+    "less": "^3.11.1",
+    "live-server": "^1.2.1"
   }
 }
