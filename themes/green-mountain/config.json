@@ -7,6 +7,7 @@
   "footerText": "粤ICP备16109955号-1",
   "brand": "Zhenly",
   "blogRSS": "https://blog.zhenly.cn/atom.xml",
+  "blogLink": "https://blog.zhenly.cn",
   "projects": [
     {
       "title": "Web | Violet User System",

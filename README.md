@@ -15,7 +15,11 @@
 
 ### Step 1
 
-编辑配置文件 `config.json`
+编辑总体配置文件 `config.json`
+
+编辑主题文件配置文件 `themes/$name/config.json`（配置值将覆盖总体配置文件中data属性的数据）
+
+
 
 ### Step 2
 
